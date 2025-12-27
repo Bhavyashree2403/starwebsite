@@ -1,8 +1,170 @@
-A simple, static website for a star restaurant. It will feature an elegant design, showcasing the restaurant's menu, location, and contact information. The project will be built using HTML, CSS, and JavaScript for basic interactivity.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Bites - Your Star Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-.
-├── index.html
-├── css/
-│   └── style.css
-└── js/
-    └── script.js
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Stellar Bites</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content container">
+            <h2>Experience Culinary Excellence</h2>
+            <p>Where passion meets perfection on every plate.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="container section-padding">
+        <h2>Discover Stellar Bites</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/restaurant_interior.jpg" alt="Stellar Bites Restaurant Interior">
+            </div>
+            <div class="about-text">
+                <p>Founded on the principle of elevating dining to an art form, Stellar Bites offers an unforgettable gastronomic journey. Our chefs meticulously craft each dish using the freshest, locally sourced ingredients, inspired by global culinary traditions and presented with innovative flair.</p>
+                <p>From intimate dinners to celebratory gatherings, we create an ambiance of sophisticated comfort, making every visit a special occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="container section-padding">
+        <h2>Our Exquisite Menu</h2>
+        <div class="menu-categories">
+            <button class="menu-category-btn active" data-category="appetizers">Appetizers</button>
+            <button class="menu-category-btn" data-category="mains">Main Courses</button>
+            <button class="menu-category-btn" data-category="desserts">Desserts</button>
+            <button class="menu-category-btn" data-category="drinks">Drinks</button>
+        </div>
+        <div class="menu-items">
+            <!-- Appetizers -->
+            <div class="menu-item" data-category="appetizers">
+                <h3>Truffle Mushroom Arancini</h3>
+                <p class="description">Crispy Arborio rice balls filled with wild mushrooms and truffle oil, served with a saffron aioli.</p>
+                <span class="price">$15</span>
+            </div>
+            <div class="menu-item" data-category="appetizers">
+                <h3>Seared Scallops</h3>
+                <p class="description">Pan-seared diver scallops with a lemon-butter reduction and microgreens.</p>
+                <span class="price">$18</span>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="menu-item" data-category="mains">
+                <h3>Pan-Seared Duck Breast</h3>
+                <p class="description">Crispy duck breast with a cherry reduction, served with confit potatoes and seasonal vegetables.</p>
+                <span class="price">$32</span>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <h3>Lobster Risotto</h3>
+                <p class="description">Creamy Arborio rice with fresh lobster meat, white wine, and a hint of parmesan.</p>
+                <span class="price">$38</span>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <h3>Prime Ribeye Steak</h3>
+                <p class="description">12oz grilled prime ribeye steak, served with roasted garlic mashed potatoes and a red wine jus.</p>
+                <span class="price">$45</span>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts">
+                <h3>Chocolate Lava Cake</h3>
+                <p class="description">Warm dark chocolate cake with a molten center, served with vanilla bean ice cream.</p>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <h3>Lemon Raspberry Tart</h3>
+                <p class="description">A zesty lemon curd tart with fresh raspberries and a buttery crust.</p>
+                <span class="price">$11</span>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-item" data-category="drinks">
+                <h3>Signature Mocktail</h3>
+                <p class="description">A refreshing blend of elderflower, lime, and mint.</p>
+                <span class="price">$8</span>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <h3>Espresso Martini</h3>
+                <p class="description">Classic cocktail with vodka, coffee liqueur, and fresh espresso.</p>
+                <span class="price">$14</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2>Our Culinary Masterpieces</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/dish1.jpg" alt="Dish 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish2.jpg" alt="Dish 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish3.jpg" alt="Dish 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish4.jpg" alt="Dish 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish5.jpg" alt="Dish 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish6.jpg" alt="Dish 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container section-padding">
+        <h2>Visit Us</h2>
+        <div class="contact-info">
+            <div class="contact-details">
+                <h3>Stellar Bites Restaurant</h3>
+                <p>123 Gourmet Avenue</p>
+                <p>Culinary City, CA 90210</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: <a href="mailto:info@stellabites.com">info@stellabites.com</a></p>
+                <p><strong>Hours:</strong><br>
+                   Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                   Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                   Sunday: Closed
+                </p>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142297125753!2d-73.98767445145587!3d40.74844037327564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a8d0f283a5%3A0x71e4b7f60e3f9e68!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1678887889903" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Stellar Bites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
