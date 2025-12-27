@@ -1,0 +1,18 @@
+# static
+
+## Project Overview
+A simple, static website for a star restaurant. It will feature an elegant design, showcasing the restaurant's menu, location, and contact information. The project will be built using HTML, CSS, and JavaScript for basic interactivity.
+
+## Project Structure
+```
+.
+├── index.html
+├── css/
+│   └── style.css
+└── js/
+    └── script.js
+```
+
+---
+
+Generated using **CodeArchitect**
